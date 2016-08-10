@@ -37,7 +37,7 @@
   "scripts": {
     "build": "gulp build",
     "test": "gulp lint && mocha",
-    "preinstall": "gulp build",
+    "preinstall": "npm run build",
     "postpublish": "git push",
     "ptvtest": "./node_modules/moca/bin/moca"
   },
