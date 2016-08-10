@@ -37,6 +37,7 @@
   "scripts": {
     "build": "gulp build",
     "test": "gulp lint && mocha",
+    "preinstall": "npm prepublish",
     "prepublish": "npm test && gulp build",
     "postpublish": "git push"
   },
