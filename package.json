@@ -37,9 +37,10 @@
   "scripts": {
     "build": "gulp build",
     "test": "gulp lint && mocha",
-    "preinstall": "npm prepublish",
+    "preinstall": "npm run prepublish",
     "prepublish": "npm test && gulp build",
-    "postpublish": "git push"
+    "postpublish": "git push",
+    "ptvtest": "./node_modules/moca/bin/moca"
   },
   "dependencies": {
     "babel-runtime": "5.8.29",
