@@ -209,7 +209,7 @@ function setupWindow(window, args) {
       return result;
     } catch (error) {
       error.filename = error.filename || filename;
-      throw error;
+      //throw error;
     } finally {
       browser._windowInScope = originalInScope;
     }
